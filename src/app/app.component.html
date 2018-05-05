@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 class="header">
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="controls">
+  <h2>Controls</h2>
+  <table>
+    <tr>
+      <td>
+          <h3>Arrange Cards :</h3>
+          <input type="button" (click)="sortCards('asc');" value="Asc Order"/>
+          <input type="button" (click)="sortCards('desc');" value="Desc Order"/>
+          <input type="button" (click)="shuffle();" value="Random"/>
+      </td>
+      <td style="padding-left: 50px;">
+          <h3>Sort by type :</h3>
+          <input type="button" (click)="sortByType('C-D-H-S');" value="C-D-H-S"/>
+          <input type="button" (click)="sortByType('S-C-D-H');" value="S-C-D-H"/>
+          <input type="button" (click)="sortByType('H-S-C-D');" value="H-S-C-D"/>
+          <input type="button" (click)="sortByType('D-H-S-C');" value="D-H-S-C"/>          
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-left: 50px;"><div>C=Clubs, D=Diamond, H=Heart, S=Spades </div></td>
+    </tr>
+  </table>
+</div>  
+
+<ul id="cardDeck" class="cardDeckClass">
+  <li *ngFor="let card of cardArr" class="card {{card.name}} rank{{card.rank}}" ></li>
+</ul>
+
+<div style="float:right;bottom:0;right:0">Developed By Prashant Nigam (<a class="lnkResume" href="/assets/resume/CV_Prashant_Nigam_CTS.pdf" target="_blank">Resume</a>)</div>

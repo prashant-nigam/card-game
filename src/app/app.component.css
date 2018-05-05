@@ -1,0 +1,104 @@
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.header {
+    background:  #509cf6;
+    margin: 0;
+    padding:5px;
+    color: white;
+    
+}
+.cardDeckClass{
+    list-style-type: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.card {
+    width: 69px;
+    height: 94px;
+    background-image: url(/assets/images/cards.png);
+    display: inline-block;
+    cursor: pointer;
+    /*background-position: -69px 0px;*/
+    z-index: 212;
+    top: 303px;
+    left: 266px;
+    margin: 2px;
+}
+
+.controls {
+    border: 1px solid rgb(0, 0, 0);
+    
+    padding: 10px;
+    padding-top: 0;
+}
+
+.lnkResume{
+    color: red;
+    font-weight: bold;
+}
+
+.club {
+    background-position-y: 0px;
+}
+
+.spade {
+    background-position-y: -282px;
+}
+
+.heart {
+    background-position-y: -564px;
+}
+
+.diamond {
+    background-position-y: -846px;
+}
+/*Ace*/
+.rank1 { 
+    background-position-x: -69px;
+}
+.rank2 { 
+    background-position-x: -138px;
+}
+.rank3 { 
+    background-position-x: -207px;
+}
+.rank4 { 
+    background-position-x: -276px;
+}
+.rank5 { 
+    background-position-x: -345px;
+}
+.rank6 { 
+    background-position-x: -414px;
+}
+.rank7 { 
+    background-position-x: -483px;
+}
+.rank8 { 
+    background-position-x: -552px;
+}
+.rank9 { 
+    background-position-x: -621px;
+}
+.rank10 { 
+    background-position-x: -690px;
+}
+/*J*/
+.rank11 { 
+    background-position-x: -759px;
+}
+/*Q*/
+.rank12 { 
+    background-position-x: -828px;
+}
+/*K*/
+.rank13 { 
+    background-position-x: -897px;
+}
